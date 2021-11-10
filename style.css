@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1cafe4;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start__button {
+  height: 128px;
+  width: 112px;
+  background-repeat: no-repeat;
+  background-image: url('svg/play.svg');
+}
+
+.start__settings {
+  width: clamp(620px, 100vw, 1000px);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+}
+
+.settings__label {
+  font-size: 32px;
+  text-align: center;
+}
+
+.settings__input {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 24px;
+  width: 80px;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  width: 555px;
+  color: #1f1f1f;
+}
+
+.timer__title {
+  font-size: 69px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.timer__countdown {
+  display: flex;
+  flex-direction: row;
+  font-size: 42px;
+  justify-content: space-between;
+}
+
+.countdown__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.countdown__unit {
+  text-align: center;
+}
+
+.countdown__value {
+  font-size: 77px;
+}
+
+.countdown__separator {
+  font-size: 140px;
+  animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.start--hidden {
+  display: none;
+}
+
+.timer--hidden {
+  display: none;
+}

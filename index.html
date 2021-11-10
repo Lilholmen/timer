@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="start">
+        <div class="start__button"></div>
+
+        <div class="start__settings">
+          <div class="settings__container">
+            <div class="settings__label">Months</div>
+            <input
+              class="settings__input"
+              type="number"
+              min="0"
+              max="11"
+              id="months"
+            />
+          </div>
+
+          <div class="settings__container">
+            <div class="settings__label">Weeks</div>
+            <input
+              class="settings__input"
+              type="number"
+              min="0"
+              max="4"
+              id="weeks"
+            />
+          </div>
+
+          <div class="settings__container">
+            <div class="settings__label">Days</div>
+            <input
+              class="settings__input"
+              type="number"
+              min="0"
+              max="6"
+              id="days"
+            />
+          </div>
+
+          <div class="settings__container">
+            <div class="settings__label">Hours</div>
+            <input
+              class="settings__input"
+              type="number"
+              min="0"
+              max="23"
+              id="hours"
+            />
+          </div>
+
+          <div class="settings__container">
+            <div class="settings__label">Minutes</div>
+            <input
+              class="settings__input"
+              type="number"
+              min="0"
+              max="59"
+              id="minutes"
+            />
+          </div>
+
+          <div class="settings__container">
+            <div class="settings__label">Seconds</div>
+            <input
+              class="settings__input"
+              type="number"
+              min="0"
+              max="59"
+              id="seconds"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="timer timer--hidden">
+        <div class="timer__title">Name</div>
+
+        <div class="timer__countdown"></div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
